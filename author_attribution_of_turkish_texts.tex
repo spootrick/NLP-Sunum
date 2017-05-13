@@ -52,8 +52,6 @@
     POS n-grams
     \item Peng, they modeled each author by a vector of the most frequent n-grams in the text
     \item Fung - Federalist Papers, by using Support Vector Machine classifier
-    \item and so on (devamı çok uzun onları biz söyleriz 2 Authorship Attribution den önceki kısımda yazıyo 
-    veya 1 slayt daha devam ederiz)
    \end{itemize}
   \end{itemize}
  \end{frame}
@@ -154,11 +152,149 @@
   
   \begin{figure}[h]
     \begin{center}
-      \includegraphics[scale=0.25]{table_1}
+      \includegraphics[scale=0.22]{table_1.png}
     \end{center}
    \end{figure}
+
+ \end{frame}
+ 
+ \begin{frame}
+  \frametitle{EXPERIMENTAL RESULTS}
+  \begin{itemize}
+   \item In this work, they used WEKA's 5 classification algorithms, which are:
+   \begin{itemize}
+   \item Naive Bayes (NB)
+   \item Support Vector Machine (SVM)
+   \item Random Forest (RF)
+   \item k-Nearest Neighbor (k-NN)
+   \item Multilayer Perceptron (MLP)
+   \end{itemize}
+	\item On all our dataset, five classification algorithms are applied to various combinations of feature types.
+  \end{itemize}
+ \end{frame}
+ 
+  \begin{frame}
+  \frametitle{EXPERIMENTAL RESULTS}
+  \begin{itemize}
+   \item \textbf{Dataset I:} 
+	\begin{itemize}
+	\item On 630 documents, 18 different authors, 35 different topic.
+	\item The best performance in Dataset I, 92.5\%, is obtained from gbtgfv with SVM. 
+	\item According to avg \textit{'rgbtgfv'} gives highest accuracy rate and the most successful classifier is \textit{'SVM'}. 
+	\item At the same time NB(\emph{85.6\%}), RF(\emph{82.0\%}) and k-NN(\emph{79.0\%}) are achieved best performance with \textit{rgbtgfv}
+	\end{itemize}
+	
+	  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.22]{table_2.png}
+    \end{center}
+   \end{figure}
+  
+  \end{itemize}
  \end{frame}
  
  
+ \begin{frame}
+  \frametitle{EXPERIMENTAL RESULTS}
+  \begin{itemize}
+   \item \textbf{Dataset II:} 
+	\begin{itemize}
+	\item On 315 documents, 9 different authors, 35 same topic.
+	\item The best performance in Dataset II, 95.4\%, is obtained from gbtgfv with MLP. 
+	\item According to avg \textit{'rbtgfv'} gives highest accuracy rate and the most successful classifier is \textit{'MLP'}. 
+	\item NB(\emph{rbgfv-90.8\%}), SVM(\emph{gbtgfv-94.6\%}), RF(\emph{rgbtgfv-91.7\%}) and k-NN(\emph{rbtgfv-89.5\%}) are achieved best performance.
+	\end{itemize}
+	
+	  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.22]{table_3.png}
+    \end{center}
+   \end{figure}
+  
+  \end{itemize}
+ \end{frame}
  
+ 
+  \begin{frame}
+  \frametitle{EXPERIMENTAL RESULTS}
+  \begin{itemize}
+   \item \textbf{Dataset III:} 
+	\begin{itemize}
+	\item On 315 documents, 9 different authors, 35 different topic.
+	\item The best performance in Dataset III, 96.9\%, is obtained from btgfv with MLP. 
+	\item According to avg \textit{'rgbtgfv'} gives highest accuracy rate and the most successful classifier is \textit{'MLP'}. 
+	\item NB(\emph{91.1\%}), RF(\emph{87.9\%}) and k-NN(\emph{90.5\%}) are achieved best performance with \textit{rgbtgfv}
+	\end{itemize}
+	
+	  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.22]{table_4.png}
+    \end{center}
+   \end{figure}
+  
+  \end{itemize}
+ \end{frame}
+ 
+ 
+ \begin{frame}
+  \frametitle{CONCLUSION}
+  \begin{itemize}
+   \item The final average performance: Dataset I (72.4\%), Dataset II (80.0\%) and Dataset III (82.9\%).
+   \item When increasing the class count, classification performance decrease. 
+   \item Dataset II and III gave better results than Dataset I. 
+   \item We compare the results of Dataset II and Dataset III to determine capability of identifying authorship for heterogenous documents.
+   
+    \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.2]{table_5.png}
+    \end{center}
+   \end{figure}
+  \end{itemize}
+ \end{frame}
+ 
+ 
+ \begin{frame}
+  \frametitle{CONCLUSION}
+  \begin{itemize}
+   
+   \item In general, MLP and SVM give good performance with \textit{rgbtgfv} and \textit{rbtgfv}.
+   \item On our corpus, NB, RF and k-NN give better results when the feature selection process is applied, while SVM and MLP give weaker. 
+   \item SVM is the best classifier while rgbtgfv is the most distinguishing feature vector according to the average result of 3 datasets.
+   
+   \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.2]{table_5.png}
+    \end{center}
+   \end{figure}
+   
+  \end{itemize}
+ \end{frame}
+ 
+ 
+  \begin{frame}
+  \frametitle{CONCLUSION}
+  \begin{itemize}
+    \item As a result, in authorship attribution of Turkish documents, it is observed that n-grams are more successful than authorship attributes. 
+   \item However, combination of n-grams and authorship attributes performs better results than using them separately.
+   \item We can say that, this work is the most successful and extensive study made for authorship attribution of Turkish documents.
+   
+   \begin{figure}[h]
+    \begin{center}
+      \includegraphics[scale=0.2]{table_5.png}
+    \end{center}
+   \end{figure}
+      
+  \end{itemize}
+ \end{frame}
+
+ 
+ \begin{frame}
+ \begin{center}
+ \begin{Huge}
+ The End
+ \end{Huge}
+ \end{center}
+ \end{frame}
+ 
+  
 \end{document}
